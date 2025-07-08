@@ -1,0 +1,85 @@
+#include <ESP8266WiFi.h>
+#include <ESP8266WebServer.h>
+
+const char* ssid = "YourWiFiSSID";
+const char* password = "YourWiFiPassword";
+
+ESP8266WebServer server(80);
+
+// L298N Motor pins
+const int IN1 = D5; // Motor A
+const int IN2 = D6;
+const int IN3 = D7; // Motor B
+const int IN4 = D8;
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+
+  connectWiFi();
+  
+  server.on("/control", handleControl);
+  server.begin();
+  Serial.println("HTTP server started");
+}
+
+void connectWiFi() {
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting to WiFi");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("\nConnected. IP: ");
+  Serial.println(WiFi.localIP());
+}
+
+void handleControl() {
+  if (!server.hasArg("cmd")) {
+    server.send(400, "text/plain", "Missing cmd");
+    return;
+  }
+
+  String cmd = server.arg("cmd");
+  cmd.toLowerCase();
+
+  if (cmd == "forward") {
+    digitalWrite(IN1, HIGH);
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN4, LOW);
+  } else if (cmd == "reverse") {
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, HIGH);
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, HIGH);
+  } else if (cmd == "left") {
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, HIGH);
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN4, LOW);
+  } else if (cmd == "right") {
+    digitalWrite(IN1, HIGH);
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, HIGH);
+  } else if (cmd == "stop") {
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, LOW);
+  } else {
+    server.send(400, "text/plain", "Unknown command");
+    return;
+  }
+
+  server.send(200, "text/plain", "Command executed: " + cmd);
+}
+
+void loop() {
+  server.handleClient();
+}
