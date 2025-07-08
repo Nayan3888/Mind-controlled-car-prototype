@@ -1,0 +1,57 @@
+Info: Processing symbol 'R14:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C1:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'R4:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R5:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R6:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R7:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R8:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R9:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R10:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R11:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R12:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R13:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R3:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'R15:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'RV1:Potentiometer_THT:Potentiometer_Bourns_3296X_Horizontal'.
+Info: Processing symbol 'SW1:Button_Switch_SMD:SW_SPST_EVQP7C'.
+Info: Processing symbol 'SW2:Button_Switch_SMD:SW_SPST_EVQP7C'.
+Info: Processing symbol 'U1:RF_Module:ESP32-WROOM-32'.
+Info: Processing symbol 'U2:Package_TO_SOT_SMD:SOT-223'.
+Info: Processing symbol 'U3:Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerEven_Lead5.84mm_TabDown'.
+Info: Processing symbol 'U4:Package_SO:SOIC-16_3.9x9.9mm_P1.27mm'.
+Info: Processing symbol 'U5:Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias'.
+Info: Processing symbol 'U6:Package_TO_SOT_SMD:SOT-23-6'.
+Info: Processing symbol 'U7:Package_TO_SOT_SMD:SOT-23-6'.
+Info: Total warnings: 1, errors: 0.
+Info: Processing symbol 'D4:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C3:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C4:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C7:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C8:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C9:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'D2:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'D3:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'Q2:Package_TO_SOT_SMD:SOT-23'.
+Info: Processing symbol 'D5:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'D6:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'D7:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'D8:LED_SMD:LED_0603_1608Metric'.
+Info: Processing symbol 'D9:Diode_SMD:D_SMA'.
+Info: Processing symbol 'J1_+1:Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal'.
+Info: Processing symbol 'J2:Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal'.
+Info: Processing symbol 'J3:Connector_JST:JST_EH_S4B-EH_1x04_P2.50mm_Horizontal'.
+Info: Processing symbol 'J4:Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal'.
+Info: Processing symbol 'J5:Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal'.
+Info: Processing symbol 'J8:Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal'.
+Info: Processing symbol 'L1:Inductor_SMD:L_1210_3225Metric'.
+Info: Processing symbol 'Q1:Package_TO_SOT_SMD:SOT-23'.
+
+
+Warning: No net found for component U2 pad 4 (no pin 4 in symbol).
+
+
+Info: Total warnings: 1, errors: 0.
